@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Smart Edu Expo 2026</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-pink: #ec4899;
+            --primary-pink-hover: #db2777;
+            --dark-navy: #1e1b4b;
+            --dark-panel: #2e1065;
+            --text-dark: #1f1f1f;
+            --text-gray: #6b7280;
+            --bg-light: #ffffff;
+            --bg-soft-pink: #fce7f3;
+            --border-color: #e5e7eb;
+            --card-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-soft-pink);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Sora', sans-serif;
+            color: var(--dark-navy);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 40px; padding-left: 40px !important; padding-right: 40px !important;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 24px; /* More rounded in this design */
+            font-weight: 600;
+            font-size: 13px;
+            text-transform: uppercase;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            letter-spacing: 0.5px;
+        }
+
+                .btn-gradient {
+            background: linear-gradient(to right, #4338ca, #38bdf8);
+            color: white !important;
+            border-radius: 50px;
+            padding: 12px 28px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(67, 56, 202, 0.3);
+            border: none;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(67, 56, 202, 0.4);
+            color: white !important;
+        }
+
+        .btn-outline-white {
+            background-color: transparent;
+            color: white !important;
+            border: 1px solid white;
+            border-radius: 50px;
+            padding: 12px 28px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .btn-outline-white:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+                .btn-gradient {
+            background: linear-gradient(to right, #4338ca, #38bdf8);
+            color: white !important;
+            border-radius: 50px;
+            padding: 12px 28px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(67, 56, 202, 0.3);
+            border: none;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(67, 56, 202, 0.4);
+            color: white !important;
+        }
+
+        .btn-outline-white {
+            background-color: transparent;
+            color: white !important;
+            border: 1px solid white;
+            border-radius: 50px;
+            padding: 12px 28px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .btn-outline-white:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .btn-gradient-gold {
+            background-color: transparent;
+            color: #fbbf24;
+            border: 1px solid #fbbf24;
+        }
+        
+        .btn-gradient-gold:hover {
+            background-color: rgba(251, 191, 36, 0.1);
+        }
+
+                                /* Header */
+        header { background-color: #fde4f1; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; width: 100%; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; height: 90px; }
+        .nav-links { display: flex; gap: 20px; align-items: center; }
+        .nav-links a { font-weight: 700; font-size: 13px; color: #1e1b4b; text-transform: uppercase; position: relative; letter-spacing: 0.5px; padding-bottom: 5px; transition: all 0.3s ease; text-decoration: none; }
+        .nav-links a:hover, .nav-links a.active { color: #06b6d4; }
+        .nav-links a.active::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 100%; height: 3px; background-color: #06b6d4; }
+
+                .btn-gradient {
+            background: linear-gradient(to right, #4338ca, #38bdf8);
+            color: white !important;
+            border-radius: 50px;
+            padding: 12px 28px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(67, 56, 202, 0.3);
+            border: none;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(67, 56, 202, 0.4);
+            color: white !important;
+        }
+
+        .btn-outline-white {
+            background-color: transparent;
+            color: white !important;
+            border: 1px solid white;
+            border-radius: 50px;
+            padding: 12px 28px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .btn-outline-white:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Section Titles */
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-subtitle {
+            color: var(--primary-pink);
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .divider {
+            height: 2px;
+            width: 40px;
+            background-color: var(--primary-pink);
+            margin: 0 auto;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, rgba(15, 16, 53, 0.95) 0%, rgba(15, 16, 53, 0.8) 40%, rgba(15, 16, 53, 0.2) 100%), url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2000&auto=format&fit=crop') center/cover;
+            color: white;
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .breadcrumb {
+            font-size: 13px;
+            color: var(--primary-pink);
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .breadcrumb span {
+            color: white;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 52px;
+            margin-bottom: 20px;
+            line-height: 1.1;
+            max-width: 500px;
+        }
+
+        .hero p {
+            color: #d1d5db;
+            font-size: 15px;
+            margin-bottom: 30px;
+            max-width: 500px;
+            line-height: 1.6;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        /* Built to Deliver Section */
+        .built-section {
+            padding: 80px 0;
+        }
+
+        .built-top {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .built-image {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .built-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .built-features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 40px;
+        }
+
+        .b-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .b-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-purple); border: none;
+            color: var(--primary-pink);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .b-feature h4 {
+            font-family: 'Manrope', sans-serif;
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        .b-feature p {
+            color: var(--text-gray);
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        /* What We Offer Section */
+        .offer-section {
+            background-color: var(--bg-soft-pink);
+            padding: 80px 0;
+        }
+
+        .offer-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        .offer-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px 15px;
+            text-align: center;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+        }
+        
+        .offer-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .offer-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary-purple);
+            color: var(--primary-pink);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin: 0 auto 20px;
+        }
+
+        .offer-card h4 {
+            font-family: 'Manrope', sans-serif;
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: var(--dark-navy);
+        }
+
+        .offer-card p {
+            font-size: 11px;
+            color: var(--text-gray);
+            line-height: 1.5;
+        }
+
+        /* Partner Section */
+        .partner-section {
+            background: linear-gradient(rgba(15, 16, 53, 0.95), rgba(15, 16, 53, 0.95)), url('https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=2000&auto=format&fit=crop') center/cover;
+            padding: 80px 0;
+            color: white;
+        }
+
+        .partner-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .partner-left h2 {
+            font-size: 36px;
+            color: white;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .partner-left > p {
+            color: #d1d5db;
+            font-size: 14px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .checklist {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .check-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 13px;
+            color: white;
+        }
+
+        .check-item i {
+            color: var(--primary-pink);
+            font-size: 16px;
+            margin-top: 2px;
+        }
+
+        .partner-card {
+            background-color: var(--dark-panel);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 40px;
+        }
+        
+        .partner-card .section-subtitle {
+            text-align: left;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        .support-list {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .support-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .support-icon {
+            color: var(--primary-pink);
+            font-size: 24px;
+            margin-top: 2px;
+            width: 30px;
+            text-align: center;
+        }
+
+        .support-item h4 {
+            color: white;
+            font-family: 'Manrope', sans-serif;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        .support-item p {
+            color: #9ca3af;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        /* Why Exhibit Section */
+        .why-section {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+        
+        .why-item {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .why-icon {
+            width: 60px;
+            height: 60px;
+            color: var(--primary-pink);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin: 0 auto 20px;
+        }
+        
+        .why-item h4 {
+            font-family: 'Manrope', sans-serif;
+            font-size: 15px;
+            color: var(--dark-navy);
+            margin-bottom: 10px;
+        }
+        
+        .why-item p {
+            color: var(--text-gray);
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        /* CTA Banner */
+        .cta-banner {
+            background: linear-gradient(rgba(15, 16, 53, 0.9), rgba(15, 16, 53, 0.9)), url('https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=2000&auto=format&fit=crop') center/cover;
+            padding: 60px 40px;
+            text-align: center;
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 80px;
+            box-shadow: 0 20px 40px rgba(15, 16, 53, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .cta-content {
+            text-align: left;
+        }
+
+        .cta-banner h2 {
+            color: white;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .cta-banner p {
+            color: #d1d5db;
+            font-size: 14px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+                /* Footer */
+        footer {
+            background-color: #0b0c2a;
+            color: white;
+            padding: 60px 0 0;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1.5fr 1.5fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        /* Logo Col */
+        .footer-logo-box {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .f-logo-left {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            color: #d97706;
+            font-size: 8px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .f-logo-dots {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3px;
+            width: 35px;
+            height: 35px;
+        }
+        
+        .f-logo-dots .dot {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            border-radius: 50%;
+        }
+        
+        .f-logo-text {
+            color: #1e3a8a;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+        
+        .f-logo-text span:first-child { font-size: 16px; font-weight: 700; font-family: 'Sora', sans-serif; }
+        .f-logo-text span:last-child { font-size: 14px; font-family: 'Sora', sans-serif; }
+
+        .footer-title {
+            color: #8b5cf6;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .footer-desc {
+            color: #d1d5db;
+            font-size: 13px;
+            line-height: 1.6;
+            max-width: 250px;
+        }
+
+        /* Footer Headings */
+        .footer-col h4 {
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        /* Quick Links */
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .footer-links a {
+            color: #e5e7eb;
+            font-size: 13px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #8b5cf6;
+        }
+
+        /* Contact Details */
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .footer-contact li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #e5e7eb;
+            font-size: 13px;
+        }
+        
+        .footer-contact li i {
+            color: #06b6d4; /* teal/cyan from screenshot */
+            font-size: 16px;
+            width: 20px;
+            text-align: center;
+        }
+
+        /* Event Details */
+        .footer-event {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            color: #e5e7eb;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .f-socials {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .f-socials a {
+            width: 36px;
+            height: 36px;
+            background-color: #1e1b4b; /* dark purple */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        
+        .f-socials a:hover {
+            background-color: #8b5cf6;
+        }
+
+        /* Bottom Bar */
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .footer-bottom p {
+            color: #8b5cf6; /* purple text from screenshot */
+            font-size: 13px;
+        }
+
+        .back-to-top {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #0284c7; /* blue button */
+            color: white;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .back-to-top:hover {
+            background-color: #0ea5e9;
+            color: white;
+        }
+
+        /* Responsive */
+        
+        /* Universal Responsive Styles */
+        @media (max-width: 1024px) {
+            .options-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 20px; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 20px; }
+            .fs-grid { grid-template-columns: 1fr !important; }
+            .main-content { grid-template-columns: 1fr !important; }
+            .contact-cards-container { grid-template-columns: repeat(2, 1fr) !important; margin-top: 40px !important; }
+            .value-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 30px; }
+            .about-grid, .team-grid, .venue-grid { grid-template-columns: repeat(2, 1fr) !important; }
+            .footer-grid { grid-template-columns: repeat(2, 1fr) !important; }
+            .hero h1 { font-size: 42px !important; }
+        }
+        
+        @media (max-width: 768px) {
+            /* Header */
+            .header-content {
+                flex-direction: column;
+                height: auto !important;
+                padding: 20px 0;
+                gap: 15px;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                padding-bottom: 10px;
+            }
+            .nav-links a { font-size: 11px; }
+            
+            /* Hero */
+            .hero { padding: 60px 0 80px !important; }
+            .hero h1 { font-size: 32px !important; }
+            .hero-buttons { flex-direction: column !important; gap: 15px !important; width: 100%; }
+            .btn-outline-white { width: 100%; box-sizing: border-box; }
+            .btn-gradient { width: 100%; box-sizing: border-box; }
+            
+            /* General Grids */
+            .stats-grid, .options-grid, .value-grid, .about-grid, .team-grid, .venue-grid, .contact-cards-container {
+                grid-template-columns: 1fr !important;
+            }
+            
+            /* Footer */
+            .footer-grid { grid-template-columns: 1fr !important; gap: 30px; }
+            .back-to-top {
+                position: static !important;
+                transform: none !important;
+                margin: 15px auto 0 !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .nav-links { display: grid; grid-template-columns: 1fr 1fr; width: 100%; gap: 15px 5px; }
+            .nav-links a { text-align: center; }
+            .hero h1 { font-size: 28px !important; }
+            .section-title { font-size: 26px !important; }
+            .container { padding: 0 20px !important; } /* Restore some padding for tiny screens */
+        }
+        /* Galaxy Background for Dark Sections */
+        .options-section, .floorplan-support, .partner-section, .profiles-section, .info-section {
+            background: linear-gradient(rgba(11, 12, 42, 0.3), rgba(11, 12, 42, 0.6)), url('galaxy-bg.webp') center/cover no-repeat !important;
+            color: white;
+        }
+        /* Glassmorphism for panels over galaxy background */
+        .support-card, .partner-card {
+            background-color: rgba(20, 20, 50, 0.45) !important;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .floorplan-graphic {
+            background-color: rgba(20, 20, 50, 0.45) !important;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            color: white;
+        }
+        
+        /* Ensure text in floorplan graphic is readable on dark glass */
+        .floorplan-graphic .fp-stage, .floorplan-graphic .fp-lounge {
+            color: white !important;
+            border-color: rgba(255, 255, 255, 0.3) !important;
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .floorplan-graphic .fp-legend-item {
+            color: rgba(255, 255, 255, 0.8) !important;
+        }
+        
+        .floorplan-graphic [style*="color: #111827"] {
+            color: white !important;
+        }
+        
+        /* The ENTRY/EXIT text has no class, so we target it by font-weight */
+        .floorplan-graphic [style*="font-weight: bold"] {
+            color: white !important;
+        }
+
+
+
+    
+        .section-title h3, h3.section-title {
+            border: 2px solid var(--primary-purple);
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 8px;
+        }
+</style>
+</head>
+<body>
+
+        <!-- Header -->
+<header>
+    <div class="container header-content">
+        <a href="home.html" style="padding:10px 0;display:flex;align-items:center;gap:12px;text-decoration:none;">
+            <img src="logo-smart-edu-2.png" alt="Smart EDU Expo 2026 Logo" style="height:60px;max-width:100%;object-fit:contain;">
+            <div style="width:2px;height:50px;background-color:#9333ea;margin:0 5px;"></div>
+            <div style="display:flex;flex-direction:column;justify-content:center;">
+                <div style="font-family:'Manrope',sans-serif;font-weight:800;font-size:16px;color:#1e1b4b;line-height:1.2;text-transform:uppercase;">SMART EDU EXPO 2026</div>
+                <div style="font-family:'Manrope',sans-serif;font-weight:700;font-size:13px;color:#d97706;line-height:1.2;margin-top:2px;">Connect with knowledge</div>
+                <div style="font-family:'Manrope',sans-serif;font-weight:700;font-size:12px;color:#9333ea;line-height:1.2;margin-top:2px;">Bahrain 2026</div>
+            </div>
+        </a>
+        <nav class="nav-links">
+            <a href="home.html" data-page="home.html">HOME</a>
+            <a href="about.html" class="active" data-page="about.html">ABOUT US</a>
+            <a href="exibitor.html" data-page="exibitor.html">EXHIBITORS</a>
+            <a href="visitor.html" data-page="visitor.html">VISITORS</a>
+            <a href="media.html" data-page="media.html">MEDIA</a>
+            <a href="banking.html" data-page="banking.html">BANKING</a>
+            <a href="venue.html" data-page="venue.html">VENUE</a>
+            <a href="contactUS.html" data-page="contactUS.html">CONTACT US</a>
+        </nav>
+        <a href="exibitor.html" class="btn-gradient">BOOK YOUR SPACE</a>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="breadcrumb">Home / <span>About Us</span></div>
+            <h1>About SMART EDU<br>Expo 2026</h1>
+            <p>SMART EDU Expo 2026 is the region's focused education exhibition, bringing together ideas, solutions and meaningful connections.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-gradient">BOOK MY SPACE &rarr;</a>
+                <a href="#" class="btn btn-outline-white">OUR SERVICES &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Built to Deliver -->
+    <section class="built-section container">
+        <div class="built-top">
+            <div>
+                <div class="section-subtitle" style="text-align: left;">SMART EDU EXPO 2026</div>
+                <h2 class="section-title" style="text-align: left;">Built to Deliver<br>Exceptional Events</h2>
+                <p style="color: var(--text-gray); font-size: 15px; margin-top: 20px; line-height: 1.6;">SMART EDU Expo 2026 is a focused platform for the education community, bringing exhibitors, decision-makers and visitors together in one dynamic regional event.</p>
+            </div>
+            <div class="built-image">
+                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop" alt="Exhibition Event">
+            </div>
+        </div>
+        
+        <div class="built-features">
+            <div class="b-feature">
+                <div class="b-icon"><i class="fa-solid fa-globe"></i></div>
+                <div>
+                    <h4>Regional Expertise</h4>
+                    <p>Deep understanding of regional markets and audiences to position your brand for success.</p>
+                </div>
+            </div>
+            <div class="b-feature">
+                <div class="b-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                <div>
+                    <h4>End-to-End Delivery</h4>
+                    <p>Concept, planning, operations and on-site management handled by one experienced team.</p>
+                </div>
+            </div>
+            <div class="b-feature">
+                <div class="b-icon"><i class="fa-solid fa-users-viewfinder"></i></div>
+                <div>
+                    <h4>Exhibitions & Conferences</h4>
+                    <p>Proven track record across diverse industries with exhibitions and conference formats.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Offer -->
+    <section class="offer-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What We Offer Exhibitors</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="offer-grid">
+                <div class="offer-card">
+                    <div class="offer-icon"><i class="fa-solid fa-store"></i></div>
+                    <h4>Booth Options</h4>
+                    <p>A range of booth sizes and layouts to match your objectives and budget.</p>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-icon"><i class="fa-solid fa-hammer"></i></div>
+                    <h4>Construction & Fit-Out</h4>
+                    <p>Professional build and fit-out solutions tailored to your brand and requirements.</p>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h4>Marketing Support</h4>
+                    <p>Pre-event promotion and co-marketing opportunities to increase your visibility.</p>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-icon"><i class="fa-solid fa-box-open"></i></div>
+                    <h4>On-Site Logistics</h4>
+                    <p>Efficient logistics, technical support and services throughout the event.</p>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-icon"><i class="fa-solid fa-scissors"></i></div>
+                    <h4>Opening Ceremony</h4>
+                    <p>Prominent exposure during the official opening and media coverage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operational Partner Section -->
+    <section class="partner-section">
+        <div class="container partner-grid">
+            <div class="partner-left">
+                <h2>Your Operational Partner,<br>On Site</h2>
+                <p>Our experienced operations team is your practical point of contact before, during and after the event. We work closely with exhibitors and sponsors to ensure smooth coordination, timely communication and an excellent experience on the show floor.</p>
+                
+                <div class="checklist">
+                    <div class="check-item">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span>Dedicated support from planning to breakdown</span>
+                    </div>
+                    <div class="check-item">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span>Rapid response to operational needs</span>
+                    </div>
+                    <div class="check-item">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span>Clear guidance and communication at every step</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="partner-card">
+                <div class="section-subtitle">EXHIBITION OPERATIONS DESK</div>
+                
+                <div class="support-list">
+                    <div class="support-item">
+                        <div class="support-icon"><i class="fa-solid fa-headset"></i></div>
+                        <div>
+                            <h4>Exhibitor Support</h4>
+                            <p>Assistance with bookings, documentation, booth requirements and on-site queries.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="support-item">
+                        <div class="support-icon"><i class="fa-solid fa-users-rectangle"></i></div>
+                        <div>
+                            <h4>Sponsor Coordination</h4>
+                            <p>Dedicated liaison for sponsors on branding, deliverables and activation support.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="support-item">
+                        <div class="support-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                        <div>
+                            <h4>Event Logistics</h4>
+                            <p>Logistics planning, delivery coordination and on-site operational services.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="#" class="btn btn-gradient" style="width: 100%;">CONTACT THE TEAM &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Exhibit With Us -->
+    <section class="why-section container">
+        <div class="section-header">
+            <h2 class="section-title">Why Exhibit With Us</h2>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="why-grid">
+            <div class="why-item">
+                <div class="why-icon"><i class="fa-solid fa-bullseye"></i></div>
+                <h4>Reach the Right Audience</h4>
+                <p>Connect with qualified professionals, decision-makers and buyers from across the region.</p>
+            </div>
+            
+            <div class="why-item">
+                <div class="why-icon"><i class="fa-solid fa-users"></i></div>
+                <h4>High Footfall</h4>
+                <p>Well-promoted event with strong visitor attendance and quality engagement.</p>
+            </div>
+            
+            <div class="why-item">
+                <div class="why-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                <h4>Regional Positioning</h4>
+                <p>Strategically positioned event that strengthens your presence in the region.</p>
+            </div>
+            
+            <div class="why-item">
+                <div class="why-icon"><i class="fa-solid fa-thumbs-up"></i></div>
+                <h4>A Seamless Experience</h4>
+                <p>Professional operations and attentive support so you can focus on your objectives.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <div class="container">
+        <div class="cta-banner">
+            <div class="cta-content">
+                <h2>Secure Your Place at SMART EDU Expo 2026</h2>
+                <p>Join leading organisations and showcase your solutions to the region.</p>
+            </div>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-gradient">BOOK MY SPACE &rarr;</a>
+                <a href="#" class="btn btn-gradient-gold">DOWNLOAD BROCHURE <i class="fa-solid fa-download" style="margin-left: 5px;"></i></a>
+            </div>
+        </div>
+    </div>
+
+        <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Col -->
+                <div class="footer-col">
+                    <a href="#" style="display: inline-block; margin-bottom: 20px;">
+                        <img src="logo-smart-edu-2.png" alt="Smart EDU Expo 2026 Logo" style="height: 120px; max-width: 100%; object-fit: contain; background: white; padding: 15px; border-radius: 12px;">
+                    </a>
+                    <p class="footer-desc">Organised by Future Ex - Company for Exhibitions and Conferences</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Exibitors</a>
+                        <a href="#">Visitors</a>
+                        <a href="#">Media</a>
+                        <a href="#">Venue</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-phone"></i> +973 17311212</li>
+                        <li><i class="fa-solid fa-phone"></i> +973 36004542</li>
+                        <li><i class="fa-solid fa-phone"></i> +973 36746660</li>
+                        <li><i class="fa-brands fa-whatsapp"></i> WhatsApp +973 36004542</li>
+                        <li><i class="fa-brands fa-whatsapp"></i> WhatsApp +973 36734442</li>
+                        <li><i class="fa-solid fa-envelope"></i> futureexhibitions@gmail.com</li>
+                    </ul>
+                </div>
+
+                <!-- Event Details -->
+                <div class="footer-col">
+                    <h4>Event Details</h4>
+                    <div class="footer-event">
+                        <p>Sep 29 - 30 &amp; Oct 1 - 2, 2026 9:00 AM - 9:00 PM</p>
+                        <p>Exhibition World Bahrain &mdash; Hall 2, Zallaq,<br>Kingdom of Bahrain</p>
+                    </div>
+                    <div class="f-socials">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-solid fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Smart EDU Expo. All rights reserved.</p>
+                <a href="#" class="back-to-top" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;"><i class="fa-solid fa-chevron-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+</html>

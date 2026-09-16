@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitors - Smart Edu Expo 2026</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-pink: #ec4899;
+            --primary-purple: #9333ea;
+            --primary-purple-hover: #7e22ce;
+            --dark-navy: #1e1b4b;
+            --dark-panel: #2e1065;
+            --text-dark: #1f1f1f;
+            --text-gray: #6b7280;
+            --bg-light: #fcfcfc;
+            --bg-soft-pink: #fce7f3;
+            --border-color: #e5e7eb;
+            --card-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-soft-pink);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Sora', sans-serif;
+            color: var(--dark-navy);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 40px; padding-left: 40px !important; padding-right: 40px !important;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+                .btn-gradient {
+            background: linear-gradient(to right, #4338ca, #38bdf8);
+            color: white !important;
+            border-radius: 50px;
+            padding: 12px 28px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(67, 56, 202, 0.3);
+            border: none;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(67, 56, 202, 0.4);
+            color: white !important;
+        }
+
+        .btn-outline-white {
+            background-color: transparent;
+            color: white !important;
+            border: 1px solid white;
+            border-radius: 50px;
+            padding: 12px 28px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .btn-outline-white:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+                .btn-gradient {
+            background: linear-gradient(to right, #4338ca, #38bdf8);
+            color: white !important;
+            border-radius: 50px;
+            padding: 12px 28px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(67, 56, 202, 0.3);
+            border: none;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(67, 56, 202, 0.4);
+            color: white !important;
+        }
+
+        .btn-outline-white {
+            background-color: transparent;
+            color: white !important;
+            border: 1px solid white;
+            border-radius: 50px;
+            padding: 12px 28px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .btn-outline-white:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+                .btn-gradient {
+            background: linear-gradient(to right, #4338ca, #38bdf8);
+            color: white !important;
+            border-radius: 50px;
+            padding: 12px 28px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(67, 56, 202, 0.3);
+            border: none;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(67, 56, 202, 0.4);
+            color: white !important;
+        }
+
+        .btn-outline-white {
+            background-color: transparent;
+            color: white !important;
+            border: 1px solid white;
+            border-radius: 50px;
+            padding: 12px 28px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .btn-outline-white:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+                .btn-gradient {
+            background: linear-gradient(to right, #4338ca, #38bdf8);
+            color: white !important;
+            border-radius: 50px;
+            padding: 12px 28px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(67, 56, 202, 0.3);
+            border: none;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(67, 56, 202, 0.4);
+            color: white !important;
+        }
+
+        .btn-outline-white {
+            background-color: transparent;
+            color: white !important;
+            border: 1px solid white;
+            border-radius: 50px;
+            padding: 12px 28px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .btn-outline-white:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+                                /* Header */
+        header { background-color: #fde4f1; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; width: 100%; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; height: 90px; }
+        .nav-links { display: flex; gap: 20px; align-items: center; }
+        .nav-links a { font-weight: 700; font-size: 13px; color: #1e1b4b; text-transform: uppercase; position: relative; letter-spacing: 0.5px; padding-bottom: 5px; transition: all 0.3s ease; text-decoration: none; }
+        .nav-links a:hover, .nav-links a.active { color: #06b6d4; }
+        .nav-links a.active::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 100%; height: 3px; background-color: #06b6d4; }
+
+                .btn-gradient {
+            background: linear-gradient(to right, #4338ca, #38bdf8);
+            color: white !important;
+            border-radius: 50px;
+            padding: 12px 28px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(67, 56, 202, 0.3);
+            border: none;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(67, 56, 202, 0.4);
+            color: white !important;
+        }
+
+        .btn-outline-white {
+            background-color: transparent;
+            color: white !important;
+            border: 1px solid white;
+            border-radius: 50px;
+            padding: 12px 28px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .btn-outline-white:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* graduation cap */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            font-size: 14px;
+            color: var(--primary-purple);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-weight: 600;
+            font-size: 13px;
+            position: relative;
+            color: var(--text-dark);
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary-pink);
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary-pink);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, rgba(11, 12, 42, 0.95) 0%, rgba(11, 12, 42, 0.8) 40%, rgba(11, 12, 42, 0.1) 100%), url('galaxy-bg.webp') center/cover;
+            color: white;
+            padding: 120px 0;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero-subtitle {
+            color: var(--primary-pink);
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 52px;
+            margin: 0 0 20px;
+            line-height: 1.15;
+        }
+
+        .hero p {
+            color: #d1d5db;
+            font-size: 16px;
+            margin-bottom: 30px;
+            max-width: 500px;
+            line-height: 1.6;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background-color: #fcf0f5;
+            padding: 40px 0;
+            border-bottom: 1px solid #fae1ed;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .stat-icon {
+            width: 50px;
+            height: 50px;
+            border: 1px solid rgba(244, 50, 139, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: var(--primary-pink);
+            background-color: white;
+            flex-shrink: 0;
+        }
+
+        .stat-content h3 {
+            font-family: 'Manrope', sans-serif;
+            font-size: 16px;
+            color: var(--dark-navy);
+            margin-bottom: 2px;
+        }
+
+        .stat-content p {
+            font-size: 11px;
+            color: var(--text-gray);
+            line-height: 1.4;
+        }
+        
+        /* Section Header Styles */
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-subtitle {
+            color: var(--primary-pink);
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-size: 36px;
+            color: var(--dark-navy);
+        }
+        
+        .section-title.white {
+            color: white;
+        }
+
+        /* Value Prop Section */
+        .value-section {
+            padding: 80px 0;
+            background-color: white;
+            text-align: center;
+        }
+        
+        .value-desc {
+            max-width: 600px;
+            margin: 20px auto 50px;
+            font-size: 14px;
+            color: var(--text-gray);
+        }
+
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            position: relative;
+        }
+        
+        .value-grid::before {
+            content: '';
+            position: absolute;
+            top: 35px;
+            left: 15%;
+            right: 15%;
+            height: 1px;
+            background-color: var(--border-color);
+            z-index: 1;
+        }
+
+        .value-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .value-icon {
+            width: 70px;
+            height: 70px;
+            background-color: var(--primary-pink);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(244, 50, 139, 0.2);
+            border: 5px solid white;
+        }
+
+        .value-item h3 {
+            font-family: 'Manrope', sans-serif;
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: var(--dark-navy);
+        }
+
+        .value-item p {
+            color: var(--text-gray);
+            font-size: 13px;
+            line-height: 1.6;
+            padding: 0 15px;
+        }
+
+        /* Profiles Section */
+        .profiles-section {
+            background-color: var(--primary-pink);
+            background-image: radial-gradient(circle at center, rgba(74, 58, 255, 0.15) 0%, transparent 60%);
+            padding: 80px 0;
+            color: white;
+        }
+
+        .profiles-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .profile-card {
+            background-color: transparent;
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: var(--transition);
+        }
+        
+        .profile-card:hover {
+            background-color: rgba(255,255,255,0.05);
+            border-color: rgba(255,255,255,0.2);
+        }
+
+        .profile-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary-pink);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin: 0 auto 20px;
+        }
+
+        .profile-card h4 {
+            font-family: 'Manrope', sans-serif;
+            font-size: 18px;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .profile-card p {
+            font-size: 13px;
+            color: #d1d5db;
+            line-height: 1.6;
+        }
+
+        /* Floorplan & Support Section */
+        .floorplan-support {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .fs-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 40px;
+        }
+
+        .fs-left .section-header {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        
+        .fs-left .section-title {
+            font-size: 28px;
+        }
+
+        .floorplan-graphic {
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--card-shadow);
+        }
+
+        .event-details-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .event-detail-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .event-detail-item i {
+            font-size: 20px;
+            color: var(--dark-navy);
+        }
+
+        .event-detail-item span {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--dark-navy);
+        }
+
+        /* Support Card */
+        .support-card {
+            background-color: var(--primary-pink);
+            border-radius: 12px;
+            padding: 40px;
+        }
+        
+        .support-card .section-subtitle {
+            text-align: left;
+            margin-bottom: 5px;
+            color: var(--primary-pink);
+        }
+
+        .support-card h2 {
+            font-size: 26px;
+            color: white;
+            margin-bottom: 30px;
+            line-height: 1.3;
+        }
+
+        .support-list {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .support-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .support-icon {
+            color: var(--primary-pink);
+            font-size: 24px;
+            margin-top: 2px;
+            width: 30px;
+            text-align: center;
+        }
+
+        .support-item h4 {
+            color: white;
+            font-family: 'Manrope', sans-serif;
+            font-size: 15px;
+            margin-bottom: 3px;
+        }
+
+        .support-item p {
+            color: #9ca3af;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        /* Register Section */
+        .register-section {
+            background-color: var(--bg-soft-pink);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Background skyline illustration */
+        .skyline-bg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50%;
+            height: 150px;
+            background-image: url('data:image/svg+xml;utf8,<svg width="400" height="150" xmlns="http://www.w3.org/2000/svg"><path d="M50 150 L50 80 L70 80 L70 150 M80 150 L80 60 L110 60 L110 150 M120 150 L120 40 L160 40 L160 150 M170 150 L170 90 L190 90 L190 150 M210 150 L210 70 L250 70 L250 150" fill="none" stroke="%23f4328b" stroke-width="2" opacity="0.1"/></svg>');
+            background-repeat: repeat-x;
+            background-position: bottom left;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .register-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .register-left .section-header {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        
+        .register-left p {
+            color: var(--text-dark);
+            font-size: 14px;
+            margin-bottom: 40px;
+            max-width: 400px;
+        }
+
+        .contact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contact-item i {
+            color: var(--primary-pink);
+            font-size: 20px;
+            width: 25px;
+            text-align: center;
+        }
+
+        .contact-item span {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* Form */
+        .register-form {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--dark-navy);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-family: 'Manrope', sans-serif;
+            font-size: 14px;
+            color: var(--text-dark);
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-pink);
+        }
+        
+        .register-form .btn {
+            width: 100%;
+            padding: 14px;
+            font-size: 15px;
+        }
+
+        /* Floorplan graphic mockup styling */
+        .fp-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            position: relative;
+        }
+        .fp-row {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+        .fp-box {
+            background: #ffe5f0;
+            border: 1px solid #ffb3d6;
+            color: #d81e72;
+            font-size: 9px;
+            font-weight: bold;
+            padding: 8px 0;
+            width: 35px;
+            text-align: center;
+            border-radius: 3px;
+        }
+        .fp-box.booked {
+            background: #e5e7eb;
+            border: 1px solid #d1d5db;
+            color: #6b7280;
+        }
+        .fp-box.reserved {
+            background: #e0e7ff;
+            border: 1px solid #c7d2fe;
+            color: #4f46e5;
+        }
+        .fp-center {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .fp-stage {
+            background: #1e1b4b;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        .fp-lounge {
+            background: #dcfce7;
+            border: 1px solid #86efac;
+            color: #166534;
+            font-size: 9px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100px;
+            border-radius: 4px;
+        }
+        .fp-legend {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 5px;
+            font-size: 11px;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+        .fp-legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .fp-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+        }
+
+                /* Footer */
+        footer {
+            background-color: #0b0c2a;
+            color: white;
+            padding: 60px 0 0;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1.5fr 1.5fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        /* Logo Col */
+        .footer-logo-box {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .f-logo-left {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            color: #d97706;
+            font-size: 8px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .f-logo-dots {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3px;
+            width: 35px;
+            height: 35px;
+        }
+        
+        .f-logo-dots .dot {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            border-radius: 50%;
+        }
+        
+        .f-logo-text {
+            color: #1e3a8a;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+        
+        .f-logo-text span:first-child { font-size: 16px; font-weight: 700; font-family: 'Sora', sans-serif; }
+        .f-logo-text span:last-child { font-size: 14px; font-family: 'Sora', sans-serif; }
+
+        .footer-title {
+            color: #8b5cf6;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .footer-desc {
+            color: #d1d5db;
+            font-size: 13px;
+            line-height: 1.6;
+            max-width: 250px;
+        }
+
+        /* Footer Headings */
+        .footer-col h4 {
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        /* Quick Links */
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .footer-links a {
+            color: #e5e7eb;
+            font-size: 13px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #8b5cf6;
+        }
+
+        /* Contact Details */
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .footer-contact li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #e5e7eb;
+            font-size: 13px;
+        }
+        
+        .footer-contact li i {
+            color: #06b6d4; /* teal/cyan from screenshot */
+            font-size: 16px;
+            width: 20px;
+            text-align: center;
+        }
+
+        /* Event Details */
+        .footer-event {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            color: #e5e7eb;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .f-socials {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .f-socials a {
+            width: 36px;
+            height: 36px;
+            background-color: #1e1b4b; /* dark purple */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        
+        .f-socials a:hover {
+            background-color: #8b5cf6;
+        }
+
+        /* Bottom Bar */
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .footer-bottom p {
+            color: #8b5cf6; /* purple text from screenshot */
+            font-size: 13px;
+        }
+
+        .back-to-top {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #0284c7; /* blue button */
+            color: white;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .back-to-top:hover {
+            background-color: #0ea5e9;
+            color: white;
+        }
+
+        /* Responsive */
+        
+        /* Universal Responsive Styles */
+        @media (max-width: 1024px) {
+            .options-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 20px; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 20px; }
+            .fs-grid { grid-template-columns: 1fr !important; }
+            .main-content { grid-template-columns: 1fr !important; }
+            .contact-cards-container { grid-template-columns: repeat(2, 1fr) !important; margin-top: 40px !important; }
+            .value-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 30px; }
+            .about-grid, .team-grid, .venue-grid { grid-template-columns: repeat(2, 1fr) !important; }
+            .footer-grid { grid-template-columns: repeat(2, 1fr) !important; }
+            .hero h1 { font-size: 42px !important; }
+        }
+        
+        @media (max-width: 768px) {
+            /* Header */
+            .header-content {
+                flex-direction: column;
+                height: auto !important;
+                padding: 20px 0;
+                gap: 15px;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                padding-bottom: 10px;
+            }
+            .nav-links a { font-size: 11px; }
+            
+            /* Hero */
+            .hero { padding: 60px 0 80px !important; }
+            .hero h1 { font-size: 32px !important; }
+            .hero-buttons { flex-direction: column !important; gap: 15px !important; width: 100%; }
+            .btn-outline-white { width: 100%; box-sizing: border-box; }
+            .btn-gradient { width: 100%; box-sizing: border-box; }
+            
+            /* General Grids */
+            .stats-grid, .options-grid, .value-grid, .about-grid, .team-grid, .venue-grid, .contact-cards-container {
+                grid-template-columns: 1fr !important;
+            }
+            
+            /* Footer */
+            .footer-grid { grid-template-columns: 1fr !important; gap: 30px; }
+            .back-to-top {
+                position: static !important;
+                transform: none !important;
+                margin: 15px auto 0 !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .nav-links { display: grid; grid-template-columns: 1fr 1fr; width: 100%; gap: 15px 5px; }
+            .nav-links a { text-align: center; }
+            .hero h1 { font-size: 28px !important; }
+            .section-title { font-size: 26px !important; }
+            .container { padding: 0 20px !important; } /* Restore some padding for tiny screens */
+        }
+        /* Galaxy Background for Dark Sections */
+        .options-section, .floorplan-support, .partner-section, .profiles-section, .info-section {
+            background: linear-gradient(rgba(11, 12, 42, 0.3), rgba(11, 12, 42, 0.6)), url('galaxy-bg.webp') center/cover no-repeat !important;
+            color: white;
+        }
+        /* Glassmorphism for panels over galaxy background */
+        .support-card, .partner-card {
+            background-color: rgba(20, 20, 50, 0.45) !important;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .floorplan-graphic {
+            background-color: rgba(20, 20, 50, 0.45) !important;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            color: white;
+        }
+        
+        /* Ensure text in floorplan graphic is readable on dark glass */
+        .floorplan-graphic .fp-stage, .floorplan-graphic .fp-lounge {
+            color: white !important;
+            border-color: rgba(255, 255, 255, 0.3) !important;
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .floorplan-graphic .fp-legend-item {
+            color: rgba(255, 255, 255, 0.8) !important;
+        }
+        
+        .floorplan-graphic [style*="color: #111827"] {
+            color: white !important;
+        }
+        
+        /* The ENTRY/EXIT text has no class, so we target it by font-weight */
+        .floorplan-graphic [style*="font-weight: bold"] {
+            color: white !important;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+        <!-- Header -->
+<header>
+    <div class="container header-content">
+        <a href="home.html" style="padding:10px 0;display:flex;align-items:center;gap:12px;text-decoration:none;">
+            <img src="logo-smart-edu-2.png" alt="Smart EDU Expo 2026 Logo" style="height:60px;max-width:100%;object-fit:contain;">
+            <div style="width:2px;height:50px;background-color:#9333ea;margin:0 5px;"></div>
+            <div style="display:flex;flex-direction:column;justify-content:center;">
+                <div style="font-family:'Manrope',sans-serif;font-weight:800;font-size:16px;color:#1e1b4b;line-height:1.2;text-transform:uppercase;">SMART EDU EXPO 2026</div>
+                <div style="font-family:'Manrope',sans-serif;font-weight:700;font-size:13px;color:#d97706;line-height:1.2;margin-top:2px;">Connect with knowledge</div>
+                <div style="font-family:'Manrope',sans-serif;font-weight:700;font-size:12px;color:#9333ea;line-height:1.2;margin-top:2px;">Bahrain 2026</div>
+            </div>
+        </a>
+        <nav class="nav-links">
+            <a href="home.html" data-page="home.html">HOME</a>
+            <a href="about.html" data-page="about.html">ABOUT US</a>
+            <a href="exibitor.html" data-page="exibitor.html">EXHIBITORS</a>
+            <a href="visitor.html" class="active" data-page="visitor.html">VISITORS</a>
+            <a href="media.html" data-page="media.html">MEDIA</a>
+            <a href="banking.html" data-page="banking.html">BANKING</a>
+            <a href="venue.html" data-page="venue.html">VENUE</a>
+            <a href="contactUS.html" data-page="contactUS.html">CONTACT US</a>
+        </nav>
+        <a href="exibitor.html" class="btn-gradient">BOOK YOUR SPACE</a>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-subtitle">SMART EDU EXPO 2026</div>
+                <h1>Discover the<br>Future of Education</h1>
+                <p>Explore leading educational institutions, EdTech innovations, and career pathways &mdash; all in one place, over 4 days at Exhibition World Bahrain.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-gradient">Register to Visit &rarr;</a>
+                    <a href="#" class="btn btn-outline-white">View Floor Plan &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                    <div class="stat-content">
+                        <h3>3,000+</h3>
+                        <p>Students, Educators<br>from schools & institutes</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-regular fa-building"></i></div>
+                    <div class="stat-content">
+                        <h3>3,000+ sqm</h3>
+                        <p>Exhibition Area<br>Spanning 3,000+ sqm</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-regular fa-calendar-check"></i></div>
+                    <div class="stat-content">
+                        <h3>4 Days</h3>
+                        <p>One grand event on<br>Education &bull; Technology &bull; Future</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="stat-content">
+                        <h3>Regional Platform</h3>
+                        <p>Visitors from Bahrain, KSA Eastern<br>Province, GCC & beyond</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Value Prop Section -->
+    <section class="value-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">SMART EDU EXPO 2026</div>
+                <h2 class="section-title">One Visit, Endless Opportunities</h2>
+            </div>
+            <p class="value-desc" style="margin-top: -30px;">Whether you're a student exploring your next step, a parent researching options, or an educator scouting new tools &mdash; SMART EDU Expo brings the full education ecosystem under one roof.</p>
+            
+            <div class="value-grid">
+                <div class="value-item">
+                    <div class="value-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>Meet Institutions</h3>
+                    <p>Speak directly with universities, schools, and training centres about programs and admissions.</p>
+                </div>
+                
+                <div class="value-item">
+                    <div class="value-icon"><i class="fa-regular fa-lightbulb"></i></div>
+                    <h3>Explore EdTech</h3>
+                    <p>See the latest learning technologies, digital tools, and smart classroom solutions in action.</p>
+                </div>
+                
+                <div class="value-item">
+                    <div class="value-icon"><i class="fa-regular fa-compass"></i></div>
+                    <h3>Plan Your Path</h3>
+                    <p>Get guidance on academic and career pathways from experts and exhibitors on-site.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profiles Section -->
+    <section class="profiles-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle" style="color: var(--primary-pink);">VISITOR PROFILES</div>
+                <h2 class="section-title white">Built for Every Kind of Learner</h2>
+            </div>
+            
+            <div class="profiles-grid">
+                <div class="profile-card">
+                    <div class="profile-icon"><i class="fa-solid fa-backpack"></i></div>
+                    <h4>Students</h4>
+                    <p>Discover schools, universities, and career-ready skills programs.</p>
+                </div>
+                
+                <div class="profile-card">
+                    <div class="profile-icon"><i class="fa-solid fa-people-roof"></i></div>
+                    <h4>Parents</h4>
+                    <p>Compare institutions and make informed decisions for your children's future.</p>
+                </div>
+                
+                <div class="profile-card">
+                    <div class="profile-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <h4>Educators</h4>
+                    <p>Explore new teaching tools, technology, and professional development resources.</p>
+                </div>
+                
+                <div class="profile-card">
+                    <div class="profile-icon"><i class="fa-solid fa-briefcase"></i></div>
+                    <h4>Institutions & Buyers</h4>
+                    <p>Source EdTech solutions, furniture, and classroom equipment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floorplan & Support -->
+    <section class="floorplan-support">
+        <div class="container">
+            <div class="fs-grid">
+                <!-- Left: Floor Plan Info -->
+                <div class="fs-left">
+                    <div class="section-header">
+                        <div class="section-subtitle">PLAN YOUR VISIT</div>
+                        <h2 class="section-title">Everything You Need to Know</h2>
+                    </div>
+                    
+                    <div class="floorplan-graphic">
+                        <div class="fp-container">
+                            <div class="fp-center" style="margin-bottom: 10px;">
+                                <div class="fp-stage">MAIN STAGE</div>
+                            </div>
+                            
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div style="font-size: 8px; font-weight: bold; width: 40px; text-align: center; color: var(--dark-navy);">ENTRY /<br>EXIT<br><span style="color: var(--primary-pink);">&larr;&rarr;</span></div>
+                                
+                                <div style="display: flex; gap: 20px;">
+                                    <div>
+                                        <div class="fp-row" style="margin-bottom: 5px;">
+                                            <div class="fp-box">101</div><div class="fp-box">102</div><div class="fp-box">103</div><div class="fp-box">104</div>
+                                        </div>
+                                        <div class="fp-row" style="margin-bottom: 5px;">
+                                            <div class="fp-box">105</div><div class="fp-box">106</div><div class="fp-box">107</div><div class="fp-box">108</div>
+                                        </div>
+                                        <div class="fp-row" style="margin-bottom: 5px;">
+                                            <div class="fp-box">109</div><div class="fp-box">110</div><div class="fp-box">203</div><div class="fp-box">204</div>
+                                        </div>
+                                        <div class="fp-row">
+                                            <div class="fp-box">209</div><div class="fp-box">210</div><div class="fp-box">209</div><div class="fp-box">210</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div style="display: flex; align-items: center;">
+                                        <div class="fp-lounge">NETWORKING<br>LOUNGE</div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="fp-row" style="margin-bottom: 5px;">
+                                            <div class="fp-box">305</div><div class="fp-box">306</div><div class="fp-box">307</div><div class="fp-box">112</div>
+                                        </div>
+                                        <div class="fp-row" style="margin-bottom: 5px;">
+                                            <div class="fp-box">205</div><div class="fp-box">206</div><div class="fp-box">207</div><div class="fp-box">208</div>
+                                        </div>
+                                        <div class="fp-row" style="margin-bottom: 5px;">
+                                            <div class="fp-box">303</div><div class="fp-box">304</div><div class="fp-box">305</div><div class="fp-box">306</div>
+                                        </div>
+                                        <div class="fp-row">
+                                            <div class="fp-box">283</div><div class="fp-box">284</div><div class="fp-box">285</div><div class="fp-box">286</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div style="font-size: 8px; font-weight: bold; width: 40px; text-align: center; color: var(--dark-navy);">ENTRY /<br>EXIT<br><span style="color: var(--primary-pink);">&larr;&rarr;</span></div>
+                            </div>
+                            
+                            <div class="fp-row" style="margin-top: 10px;">
+                                <div class="fp-box" style="background: #fef08a; border-color: #fde047; color: #a16207; width: 70px;">CAFE AREA</div>
+                                <div class="fp-box">251</div><div class="fp-box">252</div><div class="fp-box">271</div><div class="fp-box">272</div><div class="fp-box">273</div><div class="fp-box">274</div>
+                                <div class="fp-box" style="background: #e0f2fe; border-color: #bae6fd; color: #0369a1; width: 70px;">REGISTRATION</div>
+                            </div>
+                            
+                            <div class="fp-legend">
+                                <div class="fp-legend-item"><div class="fp-dot" style="background: #ffe5f0;"></div> Available</div>
+                                <div class="fp-legend-item"><div class="fp-dot" style="background: #e5e7eb;"></div> Booked</div>
+                                <div class="fp-legend-item"><div class="fp-dot" style="background: #e0e7ff;"></div> Reserved</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Event Details Row -->
+                        <div class="event-details-row">
+                            <div class="event-detail-item">
+                                <i class="fa-regular fa-calendar"></i>
+                                <span>Sep 29-30 & Oct 1-2, 2026</span>
+                            </div>
+                            <div class="event-detail-item">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>9:00 AM - 9:00 PM daily</span>
+                            </div>
+                            <div class="event-detail-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Exhibition World Bahrain,<br>Hall 2, Zallaq</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right: Support Desk -->
+                <div class="support-card">
+                    <div class="section-subtitle">VISITOR HELP DESK</div>
+                    <h2>Need Help Planning<br>Your Visit?</h2>
+                    
+                    <div class="support-list">
+                        <div class="support-item">
+                            <div class="support-icon"><i class="fa-solid fa-headset"></i></div>
+                            <div>
+                                <h4>General Enquiries</h4>
+                                <p>Questions about the event, schedule, or exhibitors.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="support-item">
+                            <div class="support-icon"><i class="fa-solid fa-car"></i></div>
+                            <div>
+                                <h4>Getting There</h4>
+                                <p>Directions, parking, and transport information.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="support-item">
+                            <div class="support-icon"><i class="fa-solid fa-wheelchair"></i></div>
+                            <div>
+                                <h4>Accessibility Support</h4>
+                                <p>Assistance for visitors with accessibility needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn btn-gradient" style="padding: 14px; width: 100%;">Contact the Team &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Register Section -->
+    <section class="register-section">
+        <div class="skyline-bg"></div>
+        <div class="container register-grid">
+            <div class="register-left">
+                <div class="section-header">
+                    <div class="section-subtitle">REGISTER TO VISIT</div>
+                    <h2 class="section-title">Register to Visit</h2>
+                </div>
+                <p>Registration is free and takes less than a minute.<br>Reserve your spot to skip the queue on arrival.</p>
+                
+                <div class="contact-list">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+973 17311212</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>WhatsApp +973 36004542</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>futureexhibitions@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="register-form">
+                <form action="#" method="POST">
+                    <div class="form-row">
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone / WhatsApp</label>
+                        <input type="tel" id="phone" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Visitor Type</label>
+                        <select id="type" class="form-control">
+                            <option value="">Select Visitor Type</option>
+                            <option value="student">Student</option>
+                            <option value="parent">Parent</option>
+                            <option value="educator">Educator</option>
+                            <option value="professional">Professional / Buyer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="org">School / Organization (optional)</label>
+                        <input type="text" id="org" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-gradient">
+                        Register Now &rarr;
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Col -->
+                <div class="footer-col">
+                    <a href="#" style="display: inline-block; margin-bottom: 20px;">
+                        <img src="logo-smart-edu-2.png" alt="Smart EDU Expo 2026 Logo" style="height: 120px; max-width: 100%; object-fit: contain; background: white; padding: 15px; border-radius: 12px;">
+                    </a>
+                    <p class="footer-desc">Organised by Future Ex - Company for Exhibitions and Conferences</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Exibitors</a>
+                        <a href="#">Visitors</a>
+                        <a href="#">Media</a>
+                        <a href="#">Venue</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-phone"></i> +973 17311212</li>
+                        <li><i class="fa-solid fa-phone"></i> +973 36004542</li>
+                        <li><i class="fa-solid fa-phone"></i> +973 36746660</li>
+                        <li><i class="fa-brands fa-whatsapp"></i> WhatsApp +973 36004542</li>
+                        <li><i class="fa-brands fa-whatsapp"></i> WhatsApp +973 36734442</li>
+                        <li><i class="fa-solid fa-envelope"></i> futureexhibitions@gmail.com</li>
+                    </ul>
+                </div>
+
+                <!-- Event Details -->
+                <div class="footer-col">
+                    <h4>Event Details</h4>
+                    <div class="footer-event">
+                        <p>Sep 29 - 30 &amp; Oct 1 - 2, 2026 9:00 AM - 9:00 PM</p>
+                        <p>Exhibition World Bahrain &mdash; Hall 2, Zallaq,<br>Kingdom of Bahrain</p>
+                    </div>
+                    <div class="f-socials">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-solid fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Smart EDU Expo. All rights reserved.</p>
+                <a href="#" class="back-to-top" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;"><i class="fa-solid fa-chevron-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+</html>
