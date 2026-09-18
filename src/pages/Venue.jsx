@@ -8,11 +8,11 @@ const Venue = () => {
       {" "}
       {/* Venue Hero Section */}{" "}
       <section
-        className="relative py-[100px] md:py-[150px] text-white overflow-hidden text-left bg-cover bg-center min-h-[500px] flex items-center"
+        className="relative py-[120px] md:py-[150px] text-white overflow-hidden text-left bg-cover bg-center min-h-[600px] flex items-center"
         style={{ backgroundImage: "url('/venue.webp')" }}
       >
         {" "}
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#0b0c2a] to-transparent pointer-events-none opacity-80"></div>{" "}
+        {" "}
         <div className="container relative z-10">
           {" "}
           <div className="max-w-[750px]">
@@ -21,7 +21,7 @@ const Venue = () => {
               {" "}
               Exhibition World Bahrain — Hall 2{" "}
             </h1>{" "}
-            <p className="text-[16px] md:text-[18px] text-white leading-[1.6] mb-[40px] max-w-[700px]">
+            <p className="font-manrope font-[400] text-white text-[16px] leading-[26px] md:text-[18px] mb-[40px] max-w-[700px]">
               {" "}
               A world-class venue in Block 1062, Road 6204, Sakhir, Bahrain, offering the
               ideal setting to connect, exhibit, and showcase innovation.{" "}
@@ -49,7 +49,7 @@ const Venue = () => {
             <div className="text-[#db2777] text-[12px] font-bold uppercase tracking-[1px] mb-[10px]">
               THE VENUE
             </div>{" "}
-            <h2 className="text-[35px] leading-[46px] font-sora font-semibold text-[#5b1a8c] mb-[16px]">
+            <h2 className="font-sora font-[600] text-[#faf6fd] text-[35px] leading-[46px] mb-[16px]">
               A Modern, Accessible Setting
             </h2>{" "}
             <div className="flex justify-center items-center mb-[20px]">
@@ -58,7 +58,7 @@ const Venue = () => {
               <i className="fa-solid fa-diamond text-[#db2777] text-[10px] mx-[10px]"></i>{" "}
               <div className="h-[2px] w-[30px] bg-gradient-to-l from-transparent to-[#db2777]"></div>{" "}
             </div>{" "}
-            <p className="text-[16px] text-[#6b7280] max-w-[700px] mx-auto leading-[1.6]">
+            <p className="font-manrope font-[400] text-white text-[16px] leading-[26px] max-w-[700px] mx-auto">
               {" "}
               Exhibition World Bahrain provides state-of-the-art facilities
               purpose-built for large-scale exhibitions, positioned as a gateway
@@ -78,7 +78,7 @@ const Venue = () => {
                 <h3 className="text-[18px] font-bold text-[#632591] mb-[8px] font-sora">
                   Prime Location
                 </h3>{" "}
-                <p className="text-[14px] text-[#6b7280] leading-[1.6]">
+                <p className="font-manrope font-[400] text-white text-[16px] leading-[26px]">
                   Block 1062, Road 6204, Sakhir, Bahrain, easily accessible from Manama and
                   neighboring GCC routes.
                 </p>{" "}
@@ -95,7 +95,7 @@ const Venue = () => {
                 <h3 className="text-[18px] font-bold text-[#632591] mb-[8px] font-sora">
                   Modern Facilities
                 </h3>{" "}
-                <p className="text-[14px] text-[#6b7280] leading-[1.6]">
+                <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                   Spacious, climate-controlled halls with modern infrastructure.
                 </p>{" "}
               </div>{" "}
@@ -111,7 +111,7 @@ const Venue = () => {
                 <h3 className="text-[18px] font-bold text-[#632591] mb-[8px] font-sora">
                   Easy Access
                 </h3>{" "}
-                <p className="text-[14px] text-[#6b7280] leading-[1.6]">
+                <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                   On-site parking and clear entry/exit points for smooth visitor
                   flow.
                 </p>{" "}
@@ -131,7 +131,7 @@ const Venue = () => {
             <div className="text-[#db2777] text-[12px] font-bold uppercase tracking-[1px] mb-[10px]">
               VENUE INFORMATION
             </div>{" "}
-            <h2 className="text-[35px] leading-[46px] font-sora font-semibold text-white mb-[30px]">
+            <h2 className="font-sora font-[600] text-[#faf6fd] text-[35px] leading-[46px] mb-[30px]">
               Everything You Need to Know
             </h2>{" "}
           </div>{" "}
@@ -146,7 +146,7 @@ const Venue = () => {
               <h4 className="text-[18px] font-bold text-[#632591] mb-[12px]">
                 Hall
               </h4>{" "}
-              <p className="text-[14px] text-[#6b7280] font-medium">
+              <p className="font-manrope font-[400] text-white text-[16px] leading-[26px]">
                 Hall 2,
                 <br />
                 Exhibition World Bahrain
@@ -161,7 +161,7 @@ const Venue = () => {
               <h4 className="text-[18px] font-bold text-[#632591] mb-[12px]">
                 Dates
               </h4>{" "}
-              <p className="text-[14px] text-[#6b7280] font-medium">
+              <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                 Sep 29–30 &<br />
                 Oct 1–2, 2026
               </p>{" "}
@@ -175,7 +175,7 @@ const Venue = () => {
               <h4 className="text-[18px] font-bold text-[#632591] mb-[12px]">
                 Hours
               </h4>{" "}
-              <p className="text-[14px] text-[#6b7280] font-medium">
+              <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                 9:00 AM –<br />
                 9:00 PM daily
               </p>{" "}
@@ -189,7 +189,7 @@ const Venue = () => {
               <h4 className="text-[18px] font-bold text-[#632591] mb-[12px]">
                 Exhibition Area
               </h4>{" "}
-              <p className="text-[14px] text-[#6b7280] font-medium">
+              <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                 Starting from
                 <br />
                 3,000 sqm (expandable)
@@ -199,10 +199,10 @@ const Venue = () => {
           {/* Bottom Map & Facilities */}{" "}
           <div className="text-center mb-[40px]">
             {" "}
-            <h2 className="text-[35px] leading-[46px] font-sora font-semibold text-white mb-[16px]">
+            <h2 className="font-sora font-[600] text-[#faf6fd] text-[35px] leading-[46px] mb-[16px]">
               Find Your Way to Exhibition World Bahrain
             </h2>{" "}
-            <p className="text-[16px] text-[#d8b4fe] max-w-[600px] mx-auto leading-[1.6]">
+            <p className="font-manrope font-[400] text-black text-[16px] leading-[26px] max-w-[600px] mx-auto">
               {" "}
               Located in Sakhir, the venue is well-connected by road with
               dedicated parking for exhibitors and visitors.{" "}
@@ -231,7 +231,7 @@ const Venue = () => {
                   <div className="w-[36px] h-[36px] rounded-full bg-[#fae0ed] text-[#db2777] flex items-center justify-center shrink-0">
                     <i className="fa-solid fa-location-dot"></i>
                   </div>{" "}
-                  <p className="text-[14px] text-[#1e1b4b] font-medium">
+                  <p className="font-manrope font-[400] text-white text-[16px] leading-[26px]">
                     Exhibition World Bahrain, Hall 2, Block 1062, Road 6204, Sakhir, Bahrain
                   </p>{" "}
                 </div>{" "}
@@ -240,7 +240,7 @@ const Venue = () => {
                   <div className="w-[36px] h-[36px] rounded-full bg-[#fae0ed] text-[#db2777] flex items-center justify-center shrink-0">
                     <i className="fa-solid fa-car"></i>
                   </div>{" "}
-                  <p className="text-[14px] text-[#1e1b4b] font-medium">
+                  <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                     On-site parking is available
                   </p>{" "}
                 </div>{" "}
@@ -249,7 +249,7 @@ const Venue = () => {
                   <div className="w-[36px] h-[36px] rounded-full bg-[#fae0ed] text-[#db2777] flex items-center justify-center shrink-0">
                     <i className="fa-solid fa-taxi"></i>
                   </div>{" "}
-                  <p className="text-[14px] text-[#1e1b4b] font-medium">
+                  <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                     Taxi and ride-share drop-off point at main entrance
                   </p>{" "}
                 </div>{" "}
@@ -273,7 +273,7 @@ const Venue = () => {
                     <h4 className="text-[18px] font-bold text-[#632591] mb-[6px] font-sora">
                       Accessibility
                     </h4>{" "}
-                    <p className="text-[14px] text-[#6b7280] leading-[1.6]">
+                    <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                       Ramps and accessible facilities throughout the venue.
                     </p>{" "}
                   </div>{" "}
@@ -288,7 +288,7 @@ const Venue = () => {
                     <h4 className="text-[18px] font-bold text-[#632591] mb-[6px] font-sora">
                       Café Area
                     </h4>{" "}
-                    <p className="text-[14px] text-[#6b7280] leading-[1.6]">
+                    <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                       On-site dining and refreshment options.
                     </p>{" "}
                   </div>{" "}
@@ -303,7 +303,7 @@ const Venue = () => {
                     <h4 className="text-[18px] font-bold text-[#632591] mb-[6px] font-sora">
                       Cloakroom & Info Desk
                     </h4>{" "}
-                    <p className="text-[14px] text-[#6b7280] leading-[1.6]">
+                    <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                       Assistance and storage available near the entrance.
                     </p>{" "}
                   </div>{" "}
@@ -323,7 +323,7 @@ const Venue = () => {
             <div className="text-[#db2777] text-[12px] font-bold uppercase tracking-[1px] mb-[10px]">
               EXPLORE THE LAYOUT
             </div>{" "}
-            <h2 className="text-[35px] leading-[46px] font-sora font-semibold text-[#5b1a8c] mb-[16px]">
+            <h2 className="font-sora font-[600] text-[#faf6fd] text-[35px] leading-[46px] mb-[16px]">
               Exhibition Floor Plan
             </h2>{" "}
             <div className="flex justify-center items-center mb-[20px]">
@@ -350,10 +350,10 @@ const Venue = () => {
           {" "}
           <div className="bg-[#4c1d95] rounded-[24px] p-[60px] text-center shadow-[0_20px_50px_rgba(0,0,0,0.2)]">
             {" "}
-            <h2 className="text-[35px] leading-[46px] font-sora font-semibold text-[#5b1a8c] mb-[20px]">
+            <h2 className="font-sora font-[600] text-[#faf6fd] text-[35px] leading-[46px] mb-[20px]">
               Visit Us at Exhibition World Bahrain
             </h2>{" "}
-            <p className="text-[16px] mb-[40px] text-[#c4b5fd]">
+            <p className="font-manrope font-[400] text-white text-[16px] leading-[26px] mb-[40px]">
               {" "}
               Sep 29 – 30 & Oct 1 – 2, 2026 • Hall 2, Block 1062, Road 6204, Sakhir, Bahrain{" "}
             </p>{" "}

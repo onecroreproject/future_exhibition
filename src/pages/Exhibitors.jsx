@@ -8,7 +8,7 @@ const Exhibitors = () => {
       {" "}
       {/* Hero Section */}{" "}
       <section
-        className="relative py-[100px] md:py-[150px] text-white overflow-hidden text-left bg-cover bg-center min-h-[500px] flex items-center"
+        className="relative py-[120px] md:py-[150px] text-white overflow-hidden text-left bg-cover bg-center min-h-[600px] flex items-center"
         style={{ backgroundImage: "url('/exibitor.png')" }}
       >
         {" "}
@@ -21,7 +21,7 @@ const Exhibitors = () => {
               <br />
               SMART EDU Expo 2026{" "}
             </h1>{" "}
-            <p className="text-[16px] md:text-[18px] text-white leading-[1.6] mb-[40px] max-w-[700px]">
+            <p className="font-manrope font-[400] text-white text-[16px] leading-[26px] md:text-[18px] mb-[40px] max-w-[700px]">
               {" "}
               Showcase your institution, technology, or services to 3,000+
               students, educators, and industry decision-makers from Bahrain,
@@ -50,7 +50,7 @@ const Exhibitors = () => {
                 <h3 className="text-[15px] font-bold text-[#111827] mb-[4px]">
                   3000+
                 </h3>{" "}
-                <p className="text-[12px] text-[#6b7280] leading-[1.5]">
+                <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                   Students and Educators
                   <br />
                   from schools & institutes
@@ -69,7 +69,7 @@ const Exhibitors = () => {
                 <h3 className="text-[15px] font-bold text-[#111827] mb-[4px]">
                   3,000+ sqm
                 </h3>{" "}
-                <p className="text-[12px] text-[#6b7280] leading-[1.5]">
+                <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                   Exhibition Area
                   <br />
                   Spanning 3,000+ sqm
@@ -88,7 +88,7 @@ const Exhibitors = () => {
                 <h3 className="text-[15px] font-bold text-[#111827] mb-[4px]">
                   4 Days
                 </h3>{" "}
-                <p className="text-[12px] text-[#6b7280] leading-[1.5]">
+                <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                   A grand event on Education • Technology •<br />
                   Future
                 </p>{" "}
@@ -106,7 +106,7 @@ const Exhibitors = () => {
                 <h3 className="text-[15px] font-bold text-[#111827] mb-[4px]">
                   Regional Platform
                 </h3>{" "}
-                <p className="text-[12px] text-[#6b7280] leading-[1.5]">
+                <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                   Visitors from Bahrain, KSA, the Eastern
                   <br />
                   Province, the GCC & beyond
@@ -130,7 +130,7 @@ const Exhibitors = () => {
                 PARTICIPATION OPTIONS
               </div>{" "}
             </div>{" "}
-            <h2 className="text-[35px] leading-[46px] font-sora font-semibold text-white max-w-[800px] mb-[20px]">
+            <h2 className="font-sora font-[600] text-[#faf6fd] text-[35px] leading-[46px] max-w-[800px] mb-[20px]">
               Your Space to Reach the Right Audience
             </h2>{" "}
             <div className="flex items-center justify-center gap-[6px]">
@@ -318,7 +318,7 @@ const Exhibitors = () => {
                   <h5 className="font-sora font-[600] text-black text-[15px] leading-[25px] mb-[4px]">
                     Optional add-on :
                   </h5>{" "}
-                  <p className="font-sora font-[500] text-[#54595f] text-[16px] leading-[26px]">
+                  <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                     {" "}
                     55-inch display screen
                     <br /> (Additional charge: $200){" "}
@@ -329,7 +329,7 @@ const Exhibitors = () => {
                   <h5 className="font-sora font-[600] text-black text-[15px] leading-[25px] mb-[4px]">
                     Required artwork size:
                   </h5>{" "}
-                  <p className="font-sora font-[500] text-[#54595f] text-[16px] leading-[26px]">
+                  <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                     {" "}
                     width: 253 cm / height: 197 cm{" "}
                   </p>{" "}
@@ -418,7 +418,7 @@ const Exhibitors = () => {
                   <h5 className="font-sora font-[600] text-black text-[15px] leading-[25px] mb-[4px]">
                     Artwork dimensions:
                   </h5>{" "}
-                  <p className="font-sora font-[500] text-[#54595f] text-[16px] leading-[26px]">
+                  <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                     {" "}
                     Side wall:
                     <br /> width: 285 cm / height: 245 cm
@@ -456,7 +456,7 @@ const Exhibitors = () => {
           {" "}
           <div className="text-center mb-[60px]">
             {" "}
-            <h2 className="text-[35px] leading-[46px] font-sora font-semibold text-white mb-[15px]">
+            <h2 className="font-sora font-[600] text-[#faf6fd] text-[35px] leading-[46px] mb-[15px]">
               Your Space to Reach the Right Audience
             </h2>{" "}
             <div className="flex items-center justify-center gap-[4px] mx-auto mb-[25px]">
@@ -464,7 +464,7 @@ const Exhibitors = () => {
               <div className="h-[2px] w-[90px] bg-[#632591]"></div>{" "}
               <div className="h-[2px] w-[12px] bg-[#632591]"></div>{" "}
             </div>{" "}
-            <p className="text-[14px] text-[#6b7280] max-w-[800px] mx-auto leading-[1.6]">
+            <p className="font-manrope font-[400] text-black text-[16px] leading-[26px] max-w-[800px] mx-auto">
               SMART EDU EXPO 2026 gives exhibitors a dedicated platform to
               connect directly with schools, universities, EdTech buyers, and
               education-sector decision-makers — all under one roof, across 4
@@ -481,7 +481,7 @@ const Exhibitors = () => {
               <h3 className="font-sora font-[500] text-[#faf6fd] text-[18px] leading-[23px] mb-[12px]">
                 Prime Booth Locations
               </h3>{" "}
-              <p className="font-manrope font-[400] text-[#ffffff] text-[16px] leading-[26px]">
+              <p className="font-manrope font-[400] text-white text-[16px] leading-[26px]">
                 Choose from Space Only, Shell Scheme, or fully designed Stand
                 Booths across a 3,000+ sqm exhibition floor.
               </p>{" "}
@@ -494,7 +494,7 @@ const Exhibitors = () => {
               <h3 className="font-sora font-[500] text-[#faf6fd] text-[18px] leading-[23px] mb-[12px]">
                 Turnkey Setup
               </h3>{" "}
-              <p className="font-manrope font-[400] text-[#ffffff] text-[16px] leading-[26px]">
+              <p className="font-manrope font-[400] text-white text-[16px] leading-[26px]">
                 Every booth comes with carpeting, furniture, lighting, and
                 signage — ready before doors open.
               </p>{" "}
@@ -507,7 +507,7 @@ const Exhibitors = () => {
               <h3 className="font-sora font-[500] text-[#faf6fd] text-[18px] leading-[23px] mb-[12px]">
                 Marketing Exposure
               </h3>{" "}
-              <p className="font-manrope font-[400] text-[#ffffff] text-[16px] leading-[26px]">
+              <p className="font-manrope font-[400] text-white text-[16px] leading-[26px]">
                 Your brand featured across the official brochure, website,
                 social media, and press coverage.
               </p>{" "}
@@ -522,10 +522,10 @@ const Exhibitors = () => {
           {" "}
           <div className="text-center mb-[50px]">
             {" "}
-            <h2 className="text-[35px] leading-[46px] font-sora font-semibold text-white mb-[15px]">
+            <h2 className="font-sora font-[600] text-[#faf6fd] text-[35px] leading-[46px] mb-[15px]">
               Everything You Need to Know
             </h2>{" "}
-            <p className="text-[15px] text-[#e2e8f0] max-w-[800px] mx-auto leading-[1.6]">
+            <p className="font-manrope font-[400] text-white text-[16px] leading-[26px] max-w-[800px] mx-auto">
               {" "}
               Explore the full exhibition layout across Hall 2 — including booth
               numbering, the main stage, and entry/exit points — to choose a
@@ -546,7 +546,7 @@ const Exhibitors = () => {
             {/* Right: Operational Partner */}{" "}
             <div className="bg-[#ffedf5] rounded-[24px] p-[40px] md:p-[50px] flex flex-col justify-center shadow-[0_15px_40px_rgba(0,0,0,0.2)]">
               {" "}
-              <h3 className="text-[#632591] text-[26px] md:text-[32px] font-sora font-bold mb-[40px] leading-[1.3]">
+              <h3 className="text-white text-[26px] md:text-[32px] font-sora font-bold mb-[40px] leading-[1.3]">
                 Your Operational Partner,
                 <br />
                 On Site
@@ -564,7 +564,7 @@ const Exhibitors = () => {
                     <h4 className="text-[18px] font-bold text-[#632591] mb-[6px]">
                       Booking Assistance
                     </h4>{" "}
-                    <p className="text-[14px] text-[#6b7280] leading-[1.6]">
+                    <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                       Help with reservations, documentation, and booth
                       requirements before the event.
                     </p>{" "}
@@ -581,7 +581,7 @@ const Exhibitors = () => {
                     <h4 className="text-[18px] font-bold text-[#632591] mb-[6px]">
                       On-Site Logistics
                     </h4>{" "}
-                    <p className="text-[14px] text-[#6b7280] leading-[1.6]">
+                    <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                       Delivery coordination, setup support, and technical
                       assistance during move-in.
                     </p>{" "}
@@ -598,7 +598,7 @@ const Exhibitors = () => {
                     <h4 className="text-[18px] font-bold text-[#632591] mb-[6px]">
                       Booth Design Support
                     </h4>{" "}
-                    <p className="text-[14px] text-[#6b7280] leading-[1.6]">
+                    <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                       Guidance on artwork sizing, layout, and custom booth
                       themes.
                     </p>{" "}

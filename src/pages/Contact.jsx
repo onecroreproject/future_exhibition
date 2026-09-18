@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SEO from "../components/SEO";
 import { Link } from "react-router-dom";
 const Contact = () => {
@@ -8,11 +8,11 @@ const Contact = () => {
       {" "}
       {/* Hero Section */}{" "}
       <section
-        className="relative py-[100px] md:py-[150px] text-white overflow-hidden text-center bg-cover bg-center min-h-[500px] flex items-center"
+        className="relative py-[120px] md:py-[150px] text-white overflow-hidden text-center bg-cover bg-center min-h-[600px] flex items-center"
         style={{ backgroundImage: "url('/contact us.webp')" }}
       >
         {" "}
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#0f1035] to-transparent pointer-events-none opacity-80"></div>{" "}
+        {" "}
         <div className="container relative z-10 flex flex-col items-center">
           {" "}
           <div className="max-w-[750px]">
@@ -21,7 +21,7 @@ const Contact = () => {
               {" "}
               Get in Touch{" "}
             </h1>{" "}
-            <p className="text-[16px] md:text-[18px] text-white leading-[1.6] mb-[40px] max-w-[700px]">
+            <p className="font-manrope font-[400] text-white text-[16px] leading-[26px] md:text-[18px] mb-[40px] max-w-[700px]">
               {" "}
               Have a question about exhibiting, visiting, sponsorship, or media
               coverage? Our team is ready to help.{" "}
@@ -29,23 +29,20 @@ const Contact = () => {
           </div>{" "}
         </div>{" "}
       </section>{" "}
-      {/* Content */}{" "}
-      <div className="relative z-10 -mt-[40px] pb-[80px] bg-[#ffedf5]">
-        {" "}
+      {/* Content */}
+      <div className="relative bg-[#ffedf5] pb-[80px]">
         <div className="container mx-auto px-[20px]">
-          {" "}
-          {/* Contact Cards */}{" "}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[24px] mb-[60px] pt-[20px]">
+          {/* Contact Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[20px] mb-[60px] -mt-[100px] relative z-20">
             {" "}
-            <div className="bg-[#5b1a8c] rounded-[24px] p-[40px_20px] text-center shadow-[0_15px_40px_rgba(0,0,0,0.15)] flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-[5px]">
-              {" "}
-              <div className="w-[60px] h-[60px] rounded-full bg-[#fbcfe8] text-[#db2777] flex items-center justify-center text-[24px] mb-[20px] shadow-sm">
+            <div className="bg-[#5b1a8c] rounded-[16px] p-[40px_20px] text-center shadow-[0_15px_40px_rgba(0,0,0,0.15)] flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-[5px]">
+              <div className="w-[50px] h-[50px] rounded-full bg-white text-[#ec4899] flex items-center justify-center text-[20px] mb-[20px] shadow-sm">
                 <i className="fa-solid fa-phone-volume"></i>
-              </div>{" "}
-              <h3 className="text-[20px] font-bold text-white mb-[16px] font-sora">
+              </div>
+              <h3 className="font-sora font-[500] text-[#faf6fd] text-[18px] leading-[23px] mb-[16px]">
                 Call Us
-              </h3>{" "}
-              <p className="text-[14px] text-[#e2e8f0] leading-[1.8]">
+              </h3>
+              <p className="font-manrope font-[400] text-white text-[14px] leading-[26px]">
                 +973 17311212
                 <br />
                 +973 36004542
@@ -53,43 +50,38 @@ const Contact = () => {
                 +973 36746660
               </p>{" "}
             </div>{" "}
-            <div className="bg-[#5b1a8c] rounded-[24px] p-[40px_20px] text-center shadow-[0_15px_40px_rgba(0,0,0,0.15)] flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-[5px]">
-              {" "}
-              <div className="w-[60px] h-[60px] rounded-full bg-[#fbcfe8] text-[#db2777] flex items-center justify-center text-[24px] mb-[20px] shadow-sm">
+            <div className="bg-[#5b1a8c] rounded-[16px] p-[40px_20px] text-center shadow-[0_15px_40px_rgba(0,0,0,0.15)] flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-[5px]">
+              <div className="w-[50px] h-[50px] rounded-full bg-white text-[#ec4899] flex items-center justify-center text-[20px] mb-[20px] shadow-sm">
                 <i className="fa-brands fa-whatsapp"></i>
-              </div>{" "}
-              <h3 className="text-[20px] font-bold text-white mb-[16px] font-sora">
+              </div>
+              <h3 className="font-sora font-[500] text-[#faf6fd] text-[18px] leading-[23px] mb-[16px]">
                 WhatsApp
-              </h3>{" "}
-              <p className="text-[14px] text-[#e2e8f0] leading-[1.8]">
+              </h3>
+              <p className="font-manrope font-[400] text-white text-[14px] leading-[26px]">
                 +973 36004542
                 <br />
                 +973 36734442
               </p>{" "}
             </div>{" "}
-            <div className="bg-[#5b1a8c] rounded-[24px] p-[40px_20px] text-center shadow-[0_15px_40px_rgba(0,0,0,0.15)] flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-[5px]">
-              {" "}
-              <div className="w-[60px] h-[60px] rounded-full bg-[#fbcfe8] text-[#db2777] flex items-center justify-center text-[24px] mb-[20px] shadow-sm">
+            <div className="bg-[#5b1a8c] rounded-[16px] p-[40px_20px] text-center shadow-[0_15px_40px_rgba(0,0,0,0.15)] flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-[5px]">
+              <div className="w-[50px] h-[50px] rounded-full bg-white text-[#ec4899] flex items-center justify-center text-[20px] mb-[20px] shadow-sm">
                 <i className="fa-regular fa-envelope"></i>
-              </div>{" "}
-              <h3 className="text-[20px] font-bold text-white mb-[16px] font-sora">
+              </div>
+              <h3 className="font-sora font-[500] text-[#faf6fd] text-[18px] leading-[23px] mb-[16px]">
                 Email
-              </h3>{" "}
-              <p className="text-[14px] text-[#e2e8f0] leading-[1.8]">
-                futureexhibitions@
-                <br />
-                gmail.com
+              </h3>
+              <p className="font-manrope font-[400] text-white text-[14px] leading-[26px]">
+                futureexhibitions@gmail.com
               </p>{" "}
             </div>{" "}
-            <div className="bg-[#5b1a8c] rounded-[24px] p-[40px_20px] text-center shadow-[0_15px_40px_rgba(0,0,0,0.15)] flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-[5px]">
-              {" "}
-              <div className="w-[60px] h-[60px] rounded-full bg-[#fbcfe8] text-[#db2777] flex items-center justify-center text-[24px] mb-[20px] shadow-sm">
+            <div className="bg-[#5b1a8c] rounded-[16px] p-[40px_20px] text-center shadow-[0_15px_40px_rgba(0,0,0,0.15)] flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-[5px]">
+              <div className="w-[50px] h-[50px] rounded-full bg-white text-[#ec4899] flex items-center justify-center text-[20px] mb-[20px] shadow-sm">
                 <i className="fa-solid fa-location-dot"></i>
-              </div>{" "}
-              <h3 className="text-[20px] font-bold text-white mb-[16px] font-sora">
+              </div>
+              <h3 className="font-sora font-[500] text-[#faf6fd] text-[18px] leading-[23px] mb-[16px]">
                 Visit Us
-              </h3>{" "}
-              <p className="text-[14px] text-[#e2e8f0] leading-[1.8]">
+              </h3>
+              <p className="font-manrope font-[400] text-white text-[14px] leading-[26px]">
                 Exhibition World Bahrain,
                 <br />
                 Hall 2, Block 1062,
@@ -102,14 +94,47 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[40px] lg:gap-[60px]">
             {" "}
             {/* Form Section */}{" "}
-            <div className="bg-[#5b1a8c] rounded-[24px] p-[40px] shadow-[0_20px_50px_rgba(0,0,0,0.15)]">
-              {" "}
+            <div className="bg-[#5b1a8c] rounded-[24px] p-[24px] shadow-[0_20px_50px_rgba(0,0,0,0.15)]">
+              {/* Form Section */}
               <form
-                action="#"
-                method="POST"
+                onSubmit={async (e) => {
+                  e.preventDefault();
+                  const form = e.target;
+                  const formData = new FormData(form);
+                  const data = Object.fromEntries(formData.entries());
+                  
+                  const submitBtn = form.querySelector('button[type="submit"]');
+                  const originalText = submitBtn.innerText;
+                  submitBtn.innerText = "Sending...";
+                  submitBtn.disabled = true;
+
+                  try {
+                    const response = await fetch('/contact.php', {
+                      method: 'POST',
+                      headers: {
+                        'Content-Type': 'application/json',
+                      },
+                      body: JSON.stringify(data),
+                    });
+                    
+                    const result = await response.json();
+                    
+                    if (response.ok) {
+                      alert(result.message || "Message sent successfully!");
+                      form.reset();
+                    } else {
+                      alert(result.message || "Error sending message.");
+                    }
+                  } catch (error) {
+                    console.error("Error:", error);
+                    alert("An error occurred while sending the message.");
+                  } finally {
+                    submitBtn.innerText = originalText;
+                    submitBtn.disabled = false;
+                  }
+                }}
                 className="flex flex-col gap-[20px]"
               >
-                {" "}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-[20px]">
                   {" "}
                   <div className="flex flex-col gap-[8px]">
@@ -123,6 +148,8 @@ const Contact = () => {
                     <input
                       type="text"
                       id="name"
+                      name="name"
+                      required
                       className="w-full h-[50px] px-[16px] border-none rounded-[8px] bg-white focus:ring-2 focus:ring-[#db2777] outline-none transition-all text-[#1e1b4b]"
                     />{" "}
                   </div>{" "}
@@ -137,6 +164,8 @@ const Contact = () => {
                     <input
                       type="email"
                       id="email"
+                      name="email"
+                      required
                       className="w-full h-[50px] px-[16px] border-none rounded-[8px] bg-white focus:ring-2 focus:ring-[#db2777] outline-none transition-all text-[#1e1b4b]"
                     />{" "}
                   </div>{" "}
@@ -152,6 +181,8 @@ const Contact = () => {
                   <input
                     type="tel"
                     id="phone"
+                    name="phone"
+                    required
                     className="w-full h-[50px] px-[16px] border-none rounded-[8px] bg-white focus:ring-2 focus:ring-[#db2777] outline-none transition-all text-[#1e1b4b]"
                   />{" "}
                 </div>{" "}
@@ -165,6 +196,7 @@ const Contact = () => {
                   </label>{" "}
                   <select
                     id="visitorType"
+                    name="visitorType"
                     className="w-full h-[50px] px-[16px] border-none rounded-[8px] bg-white focus:ring-2 focus:ring-[#db2777] outline-none transition-all appearance-none cursor-pointer text-[#1e1b4b]"
                   >
                     {" "}
@@ -186,6 +218,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="org"
+                    name="org"
                     className="w-full h-[50px] px-[16px] border-none rounded-[8px] bg-white focus:ring-2 focus:ring-[#db2777] outline-none transition-all text-[#1e1b4b]"
                   />{" "}
                 </div>{" "}
@@ -213,7 +246,7 @@ const Contact = () => {
                   title="Exhibition World Bahrain Map"
                 ></iframe>{" "}
               </div>{" "}
-              <div className="bg-[#5b1a8c] rounded-[24px] p-[30px] text-white flex gap-[20px] items-center shadow-[0_15px_30px_rgba(0,0,0,0.15)]">
+              <div className="bg-[#5b1a8c] rounded-[24px] p-[20px] text-white flex gap-[20px] items-center shadow-[0_15px_30px_rgba(0,0,0,0.15)]">
                 {" "}
                 <div className="w-[50px] h-[50px] rounded-full bg-[#fbcfe8] flex items-center justify-center text-[24px] text-[#db2777] shrink-0">
                   {" "}
@@ -224,10 +257,10 @@ const Contact = () => {
                   <h3 className="text-[20px] font-bold text-white mb-[4px] font-sora">
                     Exhibition World Bahrain, Hall 2
                   </h3>{" "}
-                  <p className="text-[14px] text-[#e2e8f0] mb-[12px]">
+                  <p className="font-manrope font-[400] text-white text-[16px] leading-[26px] mb-[12px]">
                     Block 1062, Road 6204, Sakhir, Bahrain
                   </p>{" "}
-                  <p className="text-[14px] text-[#c4b5fd] leading-[1.6] mb-[20px]">
+                  <p className="font-manrope font-[400] text-black text-[16px] leading-[26px] mb-[20px]">
                     We are located in the heart of Sakhir, easily accessible
                     from Manama and major highways across Bahrain.
                   </p>{" "}

@@ -8,7 +8,7 @@ const About = () => {
       {" "}
       {/* Hero Section */}{" "}
       <section
-        className="relative py-[100px] md:py-[150px] text-white overflow-hidden text-left bg-cover bg-center min-h-[500px] flex items-center"
+        className="relative py-[120px] md:py-[150px] text-white overflow-hidden text-left bg-cover bg-center min-h-[600px] flex items-center"
         style={{ backgroundImage: "url('/about us.webp')" }}
       >
         {" "}
@@ -246,7 +246,7 @@ const About = () => {
             {/* Left Side Text */}{" "}
             <div>
               {" "}
-              <h2 className="text-[35px] leading-[46px] font-sora font-semibold text-[#5b1a8c] mb-[20px]">
+              <h2 className="text-[35px] leading-[46px] font-sora font-semibold text-white mb-[20px]">
                 Your Operational Partner,
                 <br />
                 On Site

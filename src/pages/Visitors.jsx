@@ -8,7 +8,7 @@ const Visitors = () => {
       {" "}
       {/* Hero Section */}{" "}
       <section
-        className="relative py-[100px] md:py-[150px] text-white overflow-hidden text-left bg-cover bg-center min-h-[500px] flex items-center"
+        className="relative py-[120px] md:py-[150px] text-white overflow-hidden text-left bg-cover bg-center min-h-[600px] flex items-center"
         style={{ backgroundImage: "url('/visitors.webp')" }}
       >
         {" "}
@@ -22,7 +22,7 @@ const Visitors = () => {
               <br />
               Future of Education{" "}
             </h1>{" "}
-            <p className="text-[16px] md:text-[18px] text-white leading-[1.6] mb-[40px] max-w-[700px]">
+            <p className="font-manrope font-[400] text-white text-[16px] leading-[26px] md:text-[18px] mb-[40px] max-w-[700px]">
               {" "}
               Explore leading educational institutions, EdTech innovations, and
               career pathways — all in one place, over 4 days at Exhibition
@@ -48,7 +48,7 @@ const Visitors = () => {
                 <h3 className="text-[18px] font-bold text-[#1e1b4b] mb-[2px] font-sora">
                   3000+
                 </h3>{" "}
-                <p className="text-[12px] text-gray-500 leading-[1.4] font-medium">
+                <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                   Students and educators from
                   <br />
                   schools & institutes
@@ -65,7 +65,7 @@ const Visitors = () => {
                 <h3 className="text-[18px] font-bold text-[#1e1b4b] mb-[2px] font-sora">
                   3,000+ sqm
                 </h3>{" "}
-                <p className="text-[12px] text-gray-500 leading-[1.4] font-medium">
+                <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                   Exhibition Area
                   <br />
                   Spanning 3,000+ sqm
@@ -82,7 +82,7 @@ const Visitors = () => {
                 <h3 className="text-[18px] font-bold text-[#1e1b4b] mb-[2px] font-sora">
                   4 Days
                 </h3>{" "}
-                <p className="text-[12px] text-gray-500 leading-[1.4] font-medium">
+                <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                   A grand event on Education +<br />
                   Technology = Future
                 </p>{" "}
@@ -98,7 +98,7 @@ const Visitors = () => {
                 <h3 className="text-[18px] font-bold text-[#1e1b4b] mb-[2px] font-sora">
                   Regional Platform
                 </h3>{" "}
-                <p className="text-[12px] text-gray-500 leading-[1.4] font-medium">
+                <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                   Visitors from Bahrain, KSA, the
                   <br />
                   Eastern Province, the GCC &<br />
@@ -116,7 +116,7 @@ const Visitors = () => {
           {" "}
           <div className="text-center mb-[60px]">
             {" "}
-            <h2 className="text-[35px] leading-[46px] font-sora font-semibold text-[#5b1a8c] mb-[15px]">
+            <h2 className="font-sora font-[600] text-[#faf6fd] text-[35px] leading-[46px] mb-[15px]">
               One Visit, Endless Opportunities
             </h2>{" "}
             <div className="flex items-center justify-center gap-[4px] mx-auto mb-[25px]">
@@ -124,7 +124,7 @@ const Visitors = () => {
               <div className="h-[2px] w-[90px] bg-[#632591]"></div>{" "}
               <div className="h-[2px] w-[12px] bg-[#632591]"></div>{" "}
             </div>{" "}
-            <p className="text-[14px] text-[#6b7280] max-w-[800px] mx-auto leading-[1.6]">
+            <p className="font-manrope font-[400] text-black text-[16px] leading-[26px] max-w-[800px] mx-auto">
               {" "}
               Whether you're a student exploring your next steps, a parent
               researching options, or an educator scouting new tools — SMART EDU
@@ -141,7 +141,7 @@ const Visitors = () => {
               <h3 className="font-sora font-[500] text-[#632591] text-[18px] leading-[23px] mb-[12px]">
                 Meet Institutions
               </h3>{" "}
-              <p className="font-manrope font-[400] text-[#6b7280] text-[16px] leading-[26px] max-w-[300px] mx-auto">
+              <p className="font-manrope font-[400] text-black text-[16px] leading-[26px] max-w-[300px] mx-auto">
                 Speak directly with universities, schools, and training centres
                 about programs and admissions.
               </p>{" "}
@@ -154,7 +154,7 @@ const Visitors = () => {
               <h3 className="font-sora font-[500] text-[#632591] text-[18px] leading-[23px] mb-[12px]">
                 Explore EdTech
               </h3>{" "}
-              <p className="font-manrope font-[400] text-[#6b7280] text-[16px] leading-[26px] max-w-[300px] mx-auto">
+              <p className="font-manrope font-[400] text-black text-[16px] leading-[26px] max-w-[300px] mx-auto">
                 See the latest learning technologies, digital tools, and smart
                 classroom solutions in action.
               </p>{" "}
@@ -167,7 +167,7 @@ const Visitors = () => {
               <h3 className="font-sora font-[500] text-[#632591] text-[18px] leading-[23px] mb-[12px]">
                 Plan Your Path
               </h3>{" "}
-              <p className="font-manrope font-[400] text-[#6b7280] text-[16px] leading-[26px] max-w-[300px] mx-auto">
+              <p className="font-manrope font-[400] text-black text-[16px] leading-[26px] max-w-[300px] mx-auto">
                 Get guidance on academic and career pathways from experts and
                 educators on-site.
               </p>{" "}
@@ -185,7 +185,7 @@ const Visitors = () => {
             <div className="text-[#db2777] text-[12px] font-bold uppercase tracking-[1px] mb-[10px]">
               VISITOR PROFILES
             </div>{" "}
-            <h2 className="text-[35px] leading-[46px] font-sora font-semibold text-white">
+            <h2 className="font-sora font-[600] text-[#faf6fd] text-[35px] leading-[46px]">
               Built for Every Kind of Learner
             </h2>{" "}
             <div className="h-[2px] w-[40px] bg-[#db2777] mx-auto mt-[14px]"></div>{" "}
@@ -200,7 +200,7 @@ const Visitors = () => {
               <h4 className="font-sora font-[500] text-[#632591] text-[18px] leading-[23px] mb-[10px]">
                 Students
               </h4>{" "}
-              <p className="font-manrope font-[400] text-[#6b7280] text-[16px] leading-[26px]">
+              <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                 Discover schools, universities, and career-ready skills
                 programs.
               </p>{" "}
@@ -213,7 +213,7 @@ const Visitors = () => {
               <h4 className="font-sora font-[500] text-[#632591] text-[18px] leading-[23px] mb-[10px]">
                 Parents
               </h4>{" "}
-              <p className="font-manrope font-[400] text-[#6b7280] text-[16px] leading-[26px]">
+              <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                 Compare institutions and make informed decisions for your
                 children's future.
               </p>{" "}
@@ -226,7 +226,7 @@ const Visitors = () => {
               <h4 className="font-sora font-[500] text-[#632591] text-[18px] leading-[23px] mb-[10px]">
                 Educators
               </h4>{" "}
-              <p className="font-manrope font-[400] text-[#6b7280] text-[16px] leading-[26px]">
+              <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                 Explore new teaching tools, technology, and professional
                 development resources.
               </p>{" "}
@@ -239,7 +239,7 @@ const Visitors = () => {
               <h4 className="font-sora font-[500] text-[#632591] text-[18px] leading-[23px] mb-[10px]">
                 Institutions & Buyers
               </h4>{" "}
-              <p className="font-manrope font-[400] text-[#6b7280] text-[16px] leading-[26px]">
+              <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                 Source EdTech solutions, furniture, and classroom equipment.
               </p>{" "}
             </div>{" "}
@@ -256,7 +256,7 @@ const Visitors = () => {
             <div className="text-[#db2777] text-[12px] font-bold uppercase tracking-[1px] mb-[10px]">
               PLAN YOUR VISIT
             </div>{" "}
-            <h2 className="text-[35px] leading-[46px] font-sora font-semibold text-white">
+            <h2 className="font-sora font-[600] text-[#faf6fd] text-[35px] leading-[46px]">
               Everything You Need to Know
             </h2>{" "}
           </div>{" "}
@@ -292,7 +292,7 @@ const Visitors = () => {
                     <h4 className="text-[18px] font-bold text-[#632591] mb-[6px] font-sora">
                       General Enquiries
                     </h4>{" "}
-                    <p className="text-[14px] text-[#6b7280] leading-[1.6]">
+                    <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                       Questions about the event, schedule, or exhibitors.
                     </p>{" "}
                   </div>{" "}
@@ -308,7 +308,7 @@ const Visitors = () => {
                     <h4 className="text-[18px] font-bold text-[#632591] mb-[6px] font-sora">
                       Getting There
                     </h4>{" "}
-                    <p className="text-[14px] text-[#6b7280] leading-[1.6]">
+                    <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                       Directions, parking, and transport information.
                     </p>{" "}
                   </div>{" "}
@@ -324,7 +324,7 @@ const Visitors = () => {
                     <h4 className="text-[18px] font-bold text-[#632591] mb-[6px] font-sora">
                       Accessibility Support
                     </h4>{" "}
-                    <p className="text-[14px] text-[#6b7280] leading-[1.6]">
+                    <p className="font-manrope font-[400] text-black text-[16px] leading-[26px]">
                       Assistance for visitors with accessibility needs.
                     </p>{" "}
                   </div>{" "}
@@ -346,10 +346,10 @@ const Visitors = () => {
               <div className="text-[#db2777] text-[12px] font-bold uppercase tracking-[1px] mb-[10px]">
                 PLAN YOUR VISIT
               </div>{" "}
-              <h2 className="text-[35px] leading-[46px] font-sora font-semibold text-[#5b1a8c] mb-[20px]">
+              <h2 className="font-sora font-[600] text-[#faf6fd] text-[35px] leading-[46px] mb-[20px]">
                 Register to Visit
               </h2>{" "}
-              <p className="text-[16px] text-[#6b7280] leading-[1.6] mb-[30px]">
+              <p className="font-manrope font-[400] text-black text-[16px] leading-[26px] mb-[30px]">
                 {" "}
                 Registration is free and takes less than a minute.
                 <br />

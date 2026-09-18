@@ -60,7 +60,7 @@ const Media = () => {
       <SEO title="Media" description="Explore the Media page of SMART EDU EXPO - your premier educational exhibition and conference." />
       {/* Hero Section */}
       <section
-        className="relative py-[100px] md:py-[150px] text-white overflow-hidden text-left bg-cover bg-center min-h-[400px] md:min-h-[500px] flex items-center"
+        className="relative py-[120px] md:py-[150px] text-white overflow-hidden text-left bg-cover bg-center min-h-[600px] flex items-center"
         style={{ backgroundImage: "url('/galaxy-bg.webp')" }}
       >
         <div className="container relative z-10">
